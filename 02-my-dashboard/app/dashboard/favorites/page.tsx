@@ -1,4 +1,4 @@
-import { PokemonFavorites } from "@/pokemons/components/PokemonFavorites";
+import { PokemonFavorites } from "@/pokemons";
 
 export const metadata = {
  title: 'Favorites Pokemons',

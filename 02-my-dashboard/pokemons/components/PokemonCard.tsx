@@ -13,7 +13,7 @@ interface Props {
 export const PokemonCard = ({ pokemon }: Props) => {
 
   const { id, name } = pokemon;
-  const isFavorite:boolean = useAppSelector(state => (!!state.pokemons[id]))
+  const isFavorite:boolean = useAppSelector(state => (!!state.pokemons.favorites[id]))
   const dispatch = useAppDispatch();
 
   const onToggle = () => { 
