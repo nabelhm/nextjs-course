@@ -1,5 +1,3 @@
-import { CiBookmarkCheck } from "react-icons/ci"
-import * as path from 'node:path';
 import Link from "next/link";
 import React from "react";
 
@@ -9,7 +7,7 @@ interface Props {
   title: string;
 }
 
-const SidebarItem = ({ icon, path, title }: Props) => {
+export const SidebarItem = ({ icon, path, title }: Props) => {
   {/* Active className: text-white bg-gradient-to-r from-sky-600 to-cyan-400 */ }
   return (
     <>
@@ -24,4 +22,3 @@ const SidebarItem = ({ icon, path, title }: Props) => {
     </>
   )
 }
-export default SidebarItem
