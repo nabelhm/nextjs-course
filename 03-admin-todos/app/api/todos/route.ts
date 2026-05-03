@@ -37,9 +37,9 @@ export async function POST(request: Request) {
 
 export async function DELETE() {
   try {
-   const { count } = await prisma.todo.deleteMany({
+    const { count } = await prisma.todo.deleteMany({
       where: {
-        complete : true
+        complete: true
       }
     })
 

@@ -5,15 +5,16 @@ import { NewTodo, TodosGrid } from "@/todos";
 import prisma from "@/lib/prisma";
 
 export const metadata = {
-  title: "Rest Todos",
-  description: "A page to test the rest api route for todos",
+  title: "Server Todos",
+  description: "A page to test the server-side rendering for todos",
 };
 
-export default async function RestTodosPage() {
+export default async function ServerTodosPage() {
   const todos = await prisma.todo.findMany({ orderBy: { description: 'asc' } });
 
   return (
     <>
+      <span className="text-3xl mb-10">Server Actions</span>
       <div className="w-full px-3 mx-5 mb-5">
         <NewTodo />
       </div>
